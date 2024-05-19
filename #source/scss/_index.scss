@@ -1,0 +1,111 @@
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    img {
+        max-width: 170px;
+        background-size: cover;
+    }
+}
+
+.header__menu {
+    transition: .4s ease;
+
+    ul {
+        display: flex;
+        align-items: center;
+        padding: 10px 25px;
+        border-radius: 15px;
+        background-color: #e0d9d9;
+        transition: .4s ease;
+
+        li {
+            transition: .4s ease;
+            list-style: none;
+            padding-right: 15px;
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 130%;
+            color: #463845;
+            padding: 5px 10px;
+            height: 40px;
+            border-radius: 10px;
+            transition: .4s ease;
+            display: flex;
+            align-items: center;
+
+            i {
+                font-size: 22px;
+                overflow: hidden;
+                transition: .4s ease;
+                margin: 0 5px;
+            }
+
+            span {
+                transition: .4s ease, opacity .1s;
+                opacity: 0;
+                width: 0;
+            }
+
+            &:hover {
+                background-color: #b3ce86;
+                width: 100%;
+
+                span {
+                    opacity: 1;
+                    transition: .4s ease, opacity .6s .15s ease;
+                    width: 110px;
+                }
+
+                i {
+                    flex: 0 0 30px;
+                }
+            }
+        }
+
+        input {
+            height: 40px;
+            padding: 5px 15px;
+            border: 1px solid #463845;
+            max-width: 240px;
+            width: 100%;
+            color: #f4f4f4;
+            border-radius: 10px;
+            outline: none;
+
+        }
+    }
+}
+
+.header {
+    padding: 20px 0;
+}
+
+.header__user {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    .info {
+        font-size: 16px;
+        line-height: 140%;
+        color: #463845;
+        font-weight: 600;
+    }
+}

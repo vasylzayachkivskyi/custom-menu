@@ -1,0 +1,21 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
